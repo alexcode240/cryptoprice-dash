@@ -1,16 +1,31 @@
 {
   "name": "cryptoprice-dash",
-  "description": "crypto currencies dashboard example",
-  "main": "cryptoprice-dash.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "web-dev-server --node-resolve --open --app-index index.html",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcode240/cryptoprice-dash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcode240/cryptoprice-dash/issues"
+  },
+  "homepage": "https://github.com/alexcode240/cryptoprice-dash#readme",
+  "description": "",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0"
+    "lit": "^3.3.1"
   },
   "devDependencies": {
-    "@polymer/iron-demo-helpers": "^3.1.0",
-    "@polymer/test-fixture": "^4.0.2",
-    "@webcomponents/webcomponentsjs": "^2.0.0",
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4",
-    "wct-mocha": "^1.0.1"
+    "@web/dev-server": "^0.4.6",
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.3"
   }
 }

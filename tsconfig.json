@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "lib": ["es2020", "dom"],
+    "experimentalDecorators": true, 
+    "useDefineForClassFields": false,
+    "strict": true,
+    "noImplicitAny": false,
+    "outDir": "./", 
+    "rootDir": "./"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
