@@ -2,15 +2,23 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "ES2020",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+
     "lib": ["es2020", "dom"],
-    "experimentalDecorators": true, 
+
+    "experimentalDecorators": true,
     "useDefineForClassFields": false,
+
     "strict": true,
     "noImplicitAny": false,
-    "outDir": "./", 
-    "rootDir": "./"
+
+    "outDir": "./",
+    "rootDir": "./",
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
+
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
